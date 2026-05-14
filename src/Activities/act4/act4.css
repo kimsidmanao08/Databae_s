@@ -1,0 +1,93 @@
+/* act4.css */
+.act4-container {
+  min-height: 100vh;
+  /* Soft purple/blue gradient from your screenshot */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column; /* Stacks title, subtitle, and input vertically */
+  justify-content: center; /* Centers the stack vertically on the screen */
+  align-items: center;     /* Centers the stack horizontally */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  padding: 20px;
+}
+
+.brand-title {
+  font-size: 4.5rem; /* Bold, large impact title */
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.subtitle {
+  opacity: 0.9;
+  margin: 10px 0 40px 0;
+  font-size: 1.1rem;
+  text-align: center; /* THIS centers the text within the block */
+  width: 100%;        /* Ensures the text has room to align to the center */
+}
+
+/* Search Box styles */
+.search-box {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border-radius: 30px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 15px 25px;
+  border-radius: 30px 0 0 30px;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  background-color: #e8f0fe;
+  color: #333;
+}
+
+.search-btn {
+  padding: 15px 35px;
+  border-radius: 0 30px 30px 0;
+  border: none;
+  background-color: #ff7e5f; /* Coral orange button from your screenshot */
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #ff6b4a;
+  transform: scale(1.02);
+}
+
+.error-msg {
+  background-color: rgba(121, 40, 40, 0.7);
+  padding: 12px 25px;
+  border-radius: 12px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+}
+
+/* Optional: Spinner for the loading state */
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 4px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

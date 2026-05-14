@@ -1,0 +1,69 @@
+/* act1.css */
+.app-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+/* Dark Mode Appearance */
+.app-container.dark {
+  background-color: #0d0d0d;
+  color: #ffffff; 
+}
+
+/* Specific color for "Good Evening" in Dark Mode */
+.app-container.dark h1 {
+  color: #e08308; /* Bright Yellow */
+  text-shadow: 0 0 10px rgba(255, 255, 0, 0.3); /* Subtle glow */
+}
+
+/* Light Mode Appearance */
+.app-container.light {
+  background-color: #ffffff;
+  color: #1a1a1a; 
+}
+
+/* Specific color for "Good Day" in Light Mode */
+.app-container.light h1 {
+  color: #e6b800; /* A darker "Golden" yellow so it's readable on white */
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  /* Remove the general color here if you want the specific ones above to work */
+}
+
+button {
+  padding: 12px 35px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid #ff8c00; 
+  background-color: #1a1a1a; 
+  color: #ff8c00; 
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff8c00;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+.message-text {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff8c00; 
+}

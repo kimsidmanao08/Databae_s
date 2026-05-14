@@ -1,0 +1,53 @@
+/* This ensures the dark background only hits the landing page */
+.databaes-landing {
+  background-color: #0f0f0f !important;
+  color: #e0e0e0 !important;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+/* These styles ONLY apply to cards INSIDE the landing page */
+.databaes-landing .card {
+  background: #1e1e1e !important; /* The dark card you want for the menu */
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.databaes-landing .gold-btn {
+  background: #d4af37 !important;
+  color: #000 !important;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.databaes-landing .hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  border-bottom: 2px solid #d4af37;
+}
+
+/* ADD THIS: Forces the activity area to be a clean slate */
+.activity-isolation-wrapper {
+  background-color: white !important;
+  min-height: 100vh;
+  width: 100%;
+  color: #2d3436 !important; /* Matching Activity 3's font color */
+}
+
+.back-to-menu-btn {
+  margin: 20px;
+  background: #222;
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
